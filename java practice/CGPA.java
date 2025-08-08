@@ -1,0 +1,16 @@
+class  CGPA
+{
+	public static void main(String[] args) 
+	{
+		float CGPA;
+		float sem1=7.17f;
+		float sem2=8.36f;
+		float sem3=8.77f;
+		float sem4=9.13f;
+		float sem5=7.73f;
+		float sem6=7.73f;
+		CGPA=(sem1+sem2+sem3+sem4+sem5+sem6)/6.0f;
+		float result=CGPA*9.5f;
+		System.out.println("CGPA percentage is : "+result);
+	}
+}

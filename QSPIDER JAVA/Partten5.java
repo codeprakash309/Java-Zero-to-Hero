@@ -1,0 +1,16 @@
+class Partten5
+{
+	public static void main(String[] args) 
+	{ 
+		for(int row=5;row>0;row--){
+                 for(int col=0;col<row;col++){
+               System.out.print(" ");     //printing the space
+		 }
+		  for(int k=row;k<=5;k++){
+                System.out.print("*");    //printing the star
+			   }
+				System.out.println();      //printing the new line
+		}
+	}
+}
+

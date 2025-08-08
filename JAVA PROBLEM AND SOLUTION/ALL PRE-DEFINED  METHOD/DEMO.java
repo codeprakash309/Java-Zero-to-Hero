@@ -1,0 +1,15 @@
+class DEMO 
+{
+	public static void main(String[] args) 
+	{
+		DEMO d=new DEMO();
+		Class c=d.getClass();
+		Class sc=c.getSuperclass();
+		String s=new String("hello");
+	    Class o=s.getClass();
+		Class sc1=o.getSuperclass();
+		System.out.println("Name of the user defined class is :   " + c+ "   its super class is  :     "+sc);
+		System.out.println("Name of the predefined class is  :     "+o+"  its super class is  : " +sc1);
+		
+	}
+}

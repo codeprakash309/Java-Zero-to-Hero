@@ -1,0 +1,57 @@
+interface College
+{
+	String ClgName="ABIT";
+	int ClgId=2222;
+	void display();
+}
+class  Student implements College
+{
+	String Sname;
+	int Sage;
+	int SrollNo;
+	int Smarks;
+	Student(String name,int age,int rollNo,int marks)
+	{
+		Sname=name;
+		Sage=age;
+       SrollNo=rollNo;
+	   Smarks=marks;
+	}
+	public void display()
+	{
+      System.out.println("College Name : "+ClgName);
+	  System.out.println("College Id : "+ClgId);
+	  System.out.println("Student Name : "+Sname);
+	  System.out.println("Student Age  : "+Sage);
+	  System.out.println("rollNo : "+SrollNo);
+	  System.out.println("Marks : "+Smarks);
+	}
+}  
+class Teacher  implements College
+{
+	String Tname;
+	String Tsub;
+	Teacher(String Tname,String Tsub)
+	{
+         this.Tname=Tname;
+		 this.Tsub=Tsub;
+	}
+public void display()
+	{
+      System.out.println("College Name : "+ClgName);
+	  System.out.println("College Id : "+ClgId);
+	  System.out.println("Teacher Name : "+Tname);
+	  System.out.println("Subject  : "+Tsub);
+	}
+}
+class InterfaceDemo
+{
+	public static void main(String[] args) 
+	{
+		Student s=new Student("prakash",23,101,80);
+		s.display();
+         System.out.println("**********************************************");
+		Teacher t=new Teacher("durga","core java");
+		t.display();
+	}
+}

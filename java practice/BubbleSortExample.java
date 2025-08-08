@@ -1,0 +1,34 @@
+class  BubbleSortExample
+{
+	public static void main(String[] args) 
+	{
+		int arr[]={3,60,35,2,45,320,5};
+		int temp=0;
+		System.out.println("array elements before bubble sort");
+		for(int i=0;i<arr.length;i++)
+		{
+             System.out.print(arr[i]+" ");
+		}
+        System.out.println();
+         System.out.print("array elements after bubble sort...");
+		 for(int i=0;i<arr.length;i++)
+		{
+			 for(int j=0;j<arr.length-1;j++)
+			{
+               if(arr[j]>arr[j+1])
+				{
+                temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
+				}
+			}
+		}
+		System.out.println();
+		for(int i=0;i<arr.length;i++)
+		{
+         System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+
+	}
+}

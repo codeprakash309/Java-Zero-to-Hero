@@ -1,0 +1,38 @@
+//find the largest and smallest number in an array and make it dynamic
+import java.util.Scanner;
+class  LargestSmallestNumberInArray
+{
+	public static void main(String[] args)  
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter the array size : ");
+		int size=sc.nextInt();
+		System.out.println("Enter the array  elements  into an Array : ");
+		int [] arr=new int[size];
+		int max=arr[0];
+		int temp;
+		for(int i=0;i<size;i++)
+		{
+               arr[i]=sc.nextInt();
+		}
+		//logic for sorting in the assending order 
+		for(int i=0;i<size;i++)
+		{
+			for(int j=i+1;j<size;j++)
+			if(arr[i]>arr[j])
+			{
+             temp=arr[i];
+			 arr[i]=arr[j];
+			 arr[j]=temp;
+			}			
+        }
+		System.out.println("elements are : ");
+		for(int i=0;i<arr.length;i++)
+		{
+          System.out.print(arr[i]);
+		}
+		System.out.println();
+		System.out.println("smallest element in the given array is : "+arr[arr.length-1]); //last element in an array
+		System.out.println("largest element in the given array  is  : "+arr[0]);		//fist element in an array
+		}
+}

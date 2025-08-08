@@ -1,0 +1,29 @@
+class Animals
+{
+}
+class Monkey extends Animals
+{
+}
+class OverloadingCase6 
+{
+	public void M1(Animals a)
+	{
+    System.out.println("Animals version.......");
+	}
+	public void M1(Monkey m)
+	{
+    System.out.println("Monkey version......");
+	}
+	public static void main(String[] args) 
+	{
+		OverloadingCase6 obj=new OverloadingCase6();
+		Animals a=new Animals();
+		obj.M1(a);
+		Monkey m=new Monkey();
+		obj.M1(m);
+		Animals a1=new Monkey();
+		obj.M1(a1);
+		Animals a2=new Animals();
+		obj.M1(a1);
+	}
+}

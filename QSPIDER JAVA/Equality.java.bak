@@ -1,0 +1,15 @@
+class Equality 
+{
+	public static void main(String[] args) 
+	{
+
+		System.out.println("hello"=="Hello World!"); 
+		System.out.println('a'==97.0);
+		System.out.println(12==12);
+		//System.out.println(10=="10");     //error: bad operand types for binary operator '=='
+		System.out.println(true==true);
+		//System.out.println(False==false);   // error: cannot find symbol
+		System.out.println(good()==good());
+		System.out.println();
+	}
+}

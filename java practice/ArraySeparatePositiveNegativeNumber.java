@@ -1,0 +1,68 @@
+import java.util.Arrays;
+import java.util.Scanner;
+class ArraySeparatePositiveNegativeNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter size of the array : ");
+		int n=sc.nextInt();
+		int numbers[]=new int[n];
+
+		System.out.println("Enter array elements :  ");
+		for(int i=0;i<n;i++)
+		{
+          numbers[i]=sc.nextInt();
+		}
+
+		//display negative number
+		separate(numbers,n);      //passing the array
+		
+	}
+	public static void separate(int[] numbers,int n)
+	{
+       int posCount=0;
+	   int negCount=0;
+	   int positive[]=new int[n];
+	   int negative[]=new int[n];
+	   //count postive and negative number
+	   for(int i:numbers)
+		{
+         if(i>=0)
+			 ++posCount;
+		 else
+			 ++negCount;
+		}
+
+		//if array contains only positive or negative 
+		if(posCount==0)
+		{
+         System.out.println("Array contains only negative numbers ");
+
+		 //display array
+		 System.out.println("Array = "+Arrays.toString(numbers));
+		}else if(negCount==0)
+		{
+          System.out.println("Array contains only positive number ");
+		   //display array
+		 System.out.println("Array = "+Arrays.toString(numbers));
+		}
+		//check element and insert
+		int i=0;
+		int j=0;
+		for(int num:numbers)
+		{  
+          if(num>=0)
+			{
+             positive[i++]=num;
+			}
+			else
+			{
+              negative[j++]=num;
+			}
+		}
+		//both arrays
+		System.out.println("negative numbers  =  "+Arrays.toString(negative));
+		System.out.println("positive numbers  =  "+Arrays.toString(positive));
+	}
+}

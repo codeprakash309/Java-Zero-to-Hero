@@ -1,0 +1,11 @@
+class TestString 
+{
+	public static void main(String[] args) 
+	{
+		char []c="prakash";
+		for(String str:charAt(s))
+		{
+         System.out.println(str);
+		}
+	}
+}

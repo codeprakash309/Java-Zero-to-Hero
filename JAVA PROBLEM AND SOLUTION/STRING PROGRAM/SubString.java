@@ -1,0 +1,23 @@
+//find All substring of a string in java program
+import java.util.Scanner;
+class  SubString
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a string to print  it's all substring  :  ");
+		String str;
+		str=sc.nextLine();
+		System.out.println("original string : "+str);	
+		//index start from 0 always 
+		//index should be come in range otherwise you will get compile time error
+		System.out.println("Substring starting from index 0 :"+str.substring(0)); //substring(int beginIndex)
+		System.out.println("substring strating from index 1 : "+str.substring(1));
+		System.out.println("substring starting from index 2 : "+str.substring(2));
+		System.out.println("substring starting from 5 : "+str.substring(5));
+		System.out.println("substring strating from index 0 to 5 : "+str.substring(0,5));  //substring(int beginIndex, int endIndex)
+		System.out.println("substring starting from 2 to 5 : "+str.substring(2,5));
+		System.out.println("Substring end index : "+str.substring(5,6));  
+		//substring() method  end index will not included when you write the index position
+	}
+}

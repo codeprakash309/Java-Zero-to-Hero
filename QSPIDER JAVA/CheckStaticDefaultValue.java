@@ -1,0 +1,27 @@
+class  CheckStaticDefaultValue
+{
+	byte b;
+	short s;
+	int x;
+	long l;
+	float f;
+	double d;
+	char ch;
+	boolean b1;
+	String s1;
+	Test t;
+	public static void main(String[] args) 
+	{
+		 CheckStaticDefaultValue t=new  CheckStaticDefaultValue();
+		System.out.println(t.b);
+		System.out.println(t.s);
+		System.out.println(t.x);
+		System.out.println(t.l);
+		System.out.println(t.f);
+		System.out.println(t.d);
+		System.out.println(t.ch);
+		System.out.println(t.b1);
+		System.out.println(t.s1);
+		System.out.println(t.t);
+	}
+}

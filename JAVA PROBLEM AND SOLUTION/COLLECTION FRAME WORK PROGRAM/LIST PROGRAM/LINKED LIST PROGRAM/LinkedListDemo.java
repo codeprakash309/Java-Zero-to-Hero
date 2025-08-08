@@ -1,0 +1,32 @@
+import java.util.*;
+class LinkedListDemo 
+{
+	public static void main(String[] args) 
+	{
+		LinkedList<Integer>ll=new LinkedList<Integer>();
+		ll.add(10);
+		ll.add(20);
+		ll.add(30);
+		ll.add(40);
+		ll.add(50);
+		Iterator itr=ll.iterator();
+		while(itr.hasNext())
+		{
+		System.out.println(itr.next());
+		}
+		System.out.println("Adding at the first placed in the linked list");
+		ll.addFirst(90);
+		System.out.println(ll);
+		System.out.println("Adding at the last placed in the linked list");
+		ll.addLast(100);
+		System.out.println(ll);
+		System.out.println("get the first position element : "+ll.getFirst());
+		System.out.println("get the last position element : "+ll.getLast());
+		ll.removeFirst();
+		System.out.println("Remove the first position element : ");
+		System.out.println(ll);
+		System.out.println("Remove the last position element : ");
+		ll.removeLast();
+		System.out.println(ll);
+	}
+}

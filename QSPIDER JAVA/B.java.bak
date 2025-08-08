@@ -1,0 +1,14 @@
+class B 
+{
+	public void M1(double d){
+    System.out.println(d);
+	System.out.println("hello");
+
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts");
+		B obj=new B();
+		obj.M1("abc");
+	}
+}

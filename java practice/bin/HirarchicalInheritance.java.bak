@@ -1,0 +1,45 @@
+class A
+{
+	public void M1()
+	{
+    System.out.println("A class method");
+	}
+}
+class B extends A
+{
+	public void M2()
+	{
+    System.out.println("B class method");
+	}
+}
+class C extends A
+{
+	public void M3()
+	{
+    System.out.println("C class  method");
+	}
+}
+class D extends A
+{
+	public void M4()
+	{
+    System.out.println("D class  method ");
+	}
+}
+class HirarchicalInheritance 
+{
+	public static void main(String[] args) 
+	{
+		A a=new A();
+		a.M1();
+		B b=new B();
+		b.M1();
+		b.M2();
+		C c=new C();
+		c.M1();
+		c.M3();
+		D d=new D();
+		d.M1();
+		d.M4();
+	}
+}

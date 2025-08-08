@@ -1,0 +1,8 @@
+class Command3 
+{
+	public static void main(String[] args) 
+	{
+		int arr[]=Integer.parseInt(args);
+		System.out.println(arr[0]+arr[1]);
+	}
+}

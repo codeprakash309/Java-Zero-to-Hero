@@ -1,0 +1,25 @@
+class Two_D_ArrayExample2 
+{
+	public static void main(String[] args) 
+	{
+		char[][] ch={{'a','b','c'},{'d','e','f'},{'g','h','i'}};
+		System.out.print("All the elements present in the first row   :        ");
+		for(int i=0;i<ch.length;i++)
+		{
+          System.out.print(ch[0][i]+" , ");
+		}
+       System.out.println();
+		System.out.print("All the elements present in the second row :         ");
+		for(int i=0;i<ch.length;i++)
+		{
+          System.out.print(ch[1][i]+" , ");
+		}
+         System.out.println();
+		System.out.print("All the elements present in the third row :           ");
+		for(int i=0;i<ch.length;i++)
+		{
+          System.out.print(ch[2][i]+" , ");
+		}
+		 System.out.println();
+	}
+}

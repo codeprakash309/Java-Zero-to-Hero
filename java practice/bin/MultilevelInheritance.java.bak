@@ -1,0 +1,52 @@
+class Parent
+{
+	public void M1()
+	{
+		System.out.println("M1 method");
+	}
+}
+class Child extends Parent
+{
+	public void M2()
+	{
+		System.out.println("M2 method");
+	}
+}
+class SubChild extends Child
+{
+	public void M3()
+	{
+       System.out.println("M3 method");
+	}
+}
+class MultilevelInheritance 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main method start");
+		SubChild sc=new SubChild();
+		sc.M1();
+		sc.M2();
+		sc.M3();
+		System.out.println("*******Parent classs object************");
+		Parent p=new Parent();
+		p.M1();
+		//p.M2();
+		//p.M3();
+		System.out.println("***********Child class object*************");
+		Child c=new Child();
+		c.M1();
+		c.M2();
+		//c.M3();
+		System.out.println("*******Parent class reference hold child class object********");
+		Parent p1=new SubChild();
+		p1.M1();
+		//p1.M2();
+		//p1.M3();
+		System.out.println("******child class reference hold the subchild class object*****");
+		Child c1=new SubChild();
+		c1.M1();
+		c1.M2();
+		c1.M3();
+	}
+}

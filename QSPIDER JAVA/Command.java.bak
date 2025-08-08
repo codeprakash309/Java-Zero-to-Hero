@@ -1,0 +1,9 @@
+class Command 
+{
+	public static void main(String[] args) 
+	{
+		String []argh={"hello","hii","bye"};
+		for(String s:argh)
+		System.out.println(s);
+	}
+}

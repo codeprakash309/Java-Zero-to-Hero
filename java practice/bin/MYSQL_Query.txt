@@ -1,0 +1,22 @@
+use student_marks_sheets;    /*it will take you to current data base you mention in the query*/
+select*from first_semester;   /*it is used to show all the data present in the table*/
+alter table first_semester add AI_marks int;   /*it is used to add a new column or field into the table*/
+show tables;  /*it will show the all tables present in the active database*/
+describe first_semester; /*it is used to show all the details of the tables*/
+truncate table first_semester; /*it is used to delete all the record(rows)or data in the table  and it doesn't obeys any condition either it is where clause or any other*/
+insert into first_semester(colle_name,reg_no,name,c_marks,java_marks,python_marks,mysql_marks,AI_marks,total_marks,secured_marks,percentage)
+values("abit",101,"prakash",80,60,78,68,77,500,363,61),("abit",102,"krishna",84,50,68,67,77,500,333,59),("abit",103,"Ram",88,64,76,68,77,500,380,64),("abit",104,"Shayam",70,60,88,66,77,500,380,69),
+("abit",105,"bramha",80,80,78,68,77,500,390,68);  /*it is used for inserting the multiple data into the table */
+delete from first_semester;  /*delete table from database */
+Set SQL_SAFE_UPDATES=0; /*this command is used for safe mood when you want to delete operation on mysql before execute delete query first this query must be execute then you can delete the table*/
+/*WHERE clause is used to filter the records from the data  WHERE clause is used along with SELECT command*/
+/*operator are also combined with WHERE clause to filter the data(AND,OR,NOT)*/
+/*AND operator returns a record if all the condition are TRUE which are separated by AND*/
+/*OR operator returns a record if any conditions are TRUE which are separated by OR*/
+/*NOT operator returns a record if the conditions are not TRUE*/
+select*from first_semester where reg_no=101 and name="prakash";
+select*from first_semester where reg_no=101 or name="prakash";
+select*from first_semester where not name="Ram";
+select*from first_semester where reg_no in(101,104);/*this command behaved like a OR comand , to avoid the write OR again and again you should use IN command it is also same as  OR*/
+select*from first_semester where reg_no between 101 and 104;/*it will returns all the record present between given range*/
+

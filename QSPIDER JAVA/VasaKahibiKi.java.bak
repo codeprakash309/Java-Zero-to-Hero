@@ -1,0 +1,28 @@
+class VasaKahibiKi 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("teri maa ki tabiyat thik hai to");
+			System.out.println("teri behen ki ladka ko bhanja bolu kya");
+				System.out.println("kya be sale dikhta nehi hai kya");
+				System.out.println("chal jaa na be ");
+				for(int i=0;i<3;i++){
+
+                	System.out.println("jaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+				}
+				System.out.println("tume mora coding padhiki vul bujhibani please..... ");
+				for(int i=0;i<2;i++){
+				System.out.println("bujhile bala na...............");
+				}
+				System.out.println("mu tumara tunguru bala");
+				for(int i=0;i<2;i++){
+          System.out.println("Barsha  oh my darling......");
+		  for(int j=i;j<3;j++){
+                System.out.println("I love you Barsha.....  ");
+	         	  }
+				}
+				System.out.println("abe barsha kana kahuchi suna");
+				System.out.println("tunguru only Barsha ");
+				System.out.println("tunguru bina banchi paribini");
+	}
+}

@@ -1,0 +1,17 @@
+class TestConstructor 
+{
+	TestConstructor()
+	{
+   System.out.println("constructor.......");
+	}
+	void TestConstructor()                       // method name can be same with class name 
+	{
+    System.out.println("normal method....");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main method.....");
+		//TestConstructor obj=new TestConstructor();
+		new TestConstructor().TestConstructor();    //calling the normal method with the help of object
+	}
+}

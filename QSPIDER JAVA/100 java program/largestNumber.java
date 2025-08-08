@@ -1,0 +1,24 @@
+//write a program to find the largest number among three numbers in java
+import java.util.Scanner;
+class  largestNumber
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the first Number : ");
+		int n1=sc.nextInt();
+		System.out.print("Enter the first Number : ");
+		int n2=sc.nextInt();
+		System.out.print("Enter the first Number : ");
+		int n3=sc.nextInt();
+		if(n1>n2&&n1>n3)
+			System.out.print(n1+"  is largest");
+		else if(n2>n1&&n2>n3)
+			System.out.print(n2+" number is largest");
+		else if(n3>n1&&n3>n2)
+			System.out.print(n3+" number is largest");
+		else
+			System.out.print("Entered number are not distinct");
+		System.out.println();
+	}
+}

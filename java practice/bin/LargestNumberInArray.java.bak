@@ -1,0 +1,33 @@
+//find the largest number in an array and make it dynamic
+import java.util.Scanner;
+class  LargestNumberInArray
+{
+	public static void main(String[] args)  
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter the array size : ");
+		int size=sc.nextInt();
+		System.out.println("Enter the array  elements  into an Array : ");
+		int [] arr=new int[size];
+		int max=arr[0];
+		int min=arr[0];
+		for(int i=0;i<size;i++)
+		{
+               arr[i]=sc.nextInt();
+		}
+		//logic for largest number in ana array
+		for(int i=0;i<size;i++)
+		{
+			if(arr[i]>max)
+			{
+             max=arr[i];
+			}
+			else if(arr[i]<min)				
+			{
+            min=arr[i];
+			}
+        }
+		System.out.println("largest element in the given array  is  : "+max);
+		System.out.println("smallest element in the given array is  : "+min);
+	}
+}

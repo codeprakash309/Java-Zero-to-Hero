@@ -1,0 +1,22 @@
+class Overloading 
+{
+	public void M1(int x)
+	{
+ System.out.println("Hii....");
+	}
+	public void M1(String s)
+	{
+  System.out.println("Hello.....");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main method starts");
+		Overloading  t1=new Overloading ();
+		//t1.M1();    //CE
+		t1.M1(10);
+		t1.M1("abc");
+		t1.M1(null);
+		//t1.M1(new String());
+		System.out.println("main method ends...");
+	}
+}

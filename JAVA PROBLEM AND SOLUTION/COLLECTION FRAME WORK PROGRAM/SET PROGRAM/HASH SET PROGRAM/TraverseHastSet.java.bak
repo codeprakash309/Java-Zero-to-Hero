@@ -1,0 +1,23 @@
+//write a program to traverse (or iterate ) HashSet
+class TraverseHastSet 
+{
+	public static void main(String[] args) 
+	{
+		//declaring a HashSet
+		HashSet<String>hs=new HashSet<String>();
+		//adding elements to HashSet
+		hs.add("pear");
+		hs.add("banana");
+		hs.add("orange");
+		hs.add("mango");
+		hs.add("grapes");
+		//Get iterator
+		Iterator<String> itr=hs.iterator();
+		//display HashSet
+		System.out.println("HashSet contains: ");
+		while(itr.hasNext())
+		{
+              System.out.println(itr.next());
+		}
+	}
+}

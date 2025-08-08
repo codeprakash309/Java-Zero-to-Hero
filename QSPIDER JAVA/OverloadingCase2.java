@@ -1,0 +1,21 @@
+class OverloadingCase2 
+{
+	public void M1(Object o)
+	{
+		System.out.println("Object para...........");
+     System.out.println(o);
+	}
+	public void M1(String s)
+	{
+		System.out.println("String para..........");
+       System.out.println(s);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main method starts........");
+		OverloadingCase2 obj =new OverloadingCase2();
+		obj.M1(null);
+		obj.M1("prakash");
+		System.out.println("main method ends.........");
+	}
+}

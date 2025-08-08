@@ -1,0 +1,25 @@
+class TestStringBuffer 
+{
+	public static void referenceCheck(Object x,Object y)
+	{
+         if(x==y)
+		{
+          System.out.println("Both pointing to the same Object");
+		}
+		else
+		{
+         System.out.println("Bothe poniting to the different Object");
+		}
+
+	}
+	public static void main(String[] args) 
+	{
+		StringBuffer sb1=new StringBuffer("core");
+		StringBuffer sb2=new StringBuffer("core");
+		System.out.println("before modification in sb1");
+		referenceCheck(sb1,sb2);
+		sb1.append("java");  //now original string is changed
+		System.out.println("After modification in sb1");
+		referenceCheck(sb1,sb2);
+	}
+}

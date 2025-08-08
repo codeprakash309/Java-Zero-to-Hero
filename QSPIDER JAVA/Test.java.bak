@@ -1,0 +1,16 @@
+class Test 
+{
+	static
+	{
+
+	 System.out.println("waada hai waada");	
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("jane meri janeman bachpan ka pyar");
+	}
+	static
+	{
+      System.out.println("aey meri hum safar.");
+	}
+}

@@ -1,0 +1,40 @@
+interface shape
+{
+	void draw();
+}
+class Circle implements shape
+{
+	//override draw method in Circle class
+	public void draw()
+	{
+      System.out.println("drawing circle......");
+	}
+}
+class Rectangle implements shape
+{
+	//override draw method in recatngle class
+	public void draw()
+	{
+       System.out.println("drawing rectangle......");
+	}
+}
+class Square implements shape
+{
+	//override draw method in Square class
+	public void draw()
+	{
+       System.out.println("drawing square......");
+	}
+}
+class InterfaceExample1 
+{
+	public static void main(String[] args) 
+	{
+		//always use interface type as a reference type
+		//we just change the implementation class object
+		 //shape s=new Rectangle();      
+		//shape s=new Circle();
+		shape s=new Square();
+		s.draw();
+	}
+}

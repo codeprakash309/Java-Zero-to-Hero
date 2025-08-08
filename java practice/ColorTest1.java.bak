@@ -1,0 +1,13 @@
+package com.diogonunes.jcolor;
+import java.io.*;
+public class ColorTest1 {
+	public static final String ANSI_RESET="\u001B[0m";	
+	public static final String ANSI_RED_BACKGROUND="\u001B[41m";  //yellow
+	public static void main(String[] args) {
+	AnsiFormat fWarning = new AnsiFormat(RED_TEXT(), YELLOW_BACK(), BOLD());
+  System.out.println(colorize("Something bad happened!", fWarning));	
+	
+		
+	}
+
+}

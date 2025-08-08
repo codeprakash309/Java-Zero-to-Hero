@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class  CountRepeatedCharacterInString
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a String  : ");
+		String str=sc.next();
+		char[] ch=str.toCharArray();
+		int i;
+		int arr[]=new int[256];
+		for(int i=0;i<str.length;i++)
+		{
+        if(str[i]=='')
+			continue;
+		arr[str[i]]++;
+		}
+		System.out.println("Repeated character in  a String are : ");
+		for(int i=0;i<256;i++)
+		{
+          if(arr[i]>1)
+			{
+           System.out.println((char)(i)+" occurs"+arr[i]+" times");
+			}
+		}
+		sc.close();
+	}
+}

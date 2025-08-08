@@ -1,0 +1,33 @@
+class SplitStringExample3 
+{
+	public static void main(String[] args) 
+	{
+		String str1="468-567-7388";
+		String str2="life,is,your,creation";
+		String str3="Hello! how are you?";
+		String[] stringarray1=str1.split("8",2);
+		System.out.println(stringarray1[0]);
+		System.out.println(stringarray1[1]);
+		//System.out.println(stringarray1[2]);
+		System.out.println("when the limit is positive.");
+		System.out.println("Number  of tokens : "+stringarray1.length);
+		for(int i=0;i<stringarray1.length;i++)
+		{
+       System.out.println(stringarray1[i]);
+		}
+		String[] stringarray2=str2.split("y",-3);
+		System.out.println("\nwhen the limit is negative.");
+		System.out.println("Number  of tokens : "+stringarray2.length);
+		for(int i=0;i<stringarray2.length;i++)
+		{
+       System.out.println(stringarray2[i]);
+		}
+		String[] stringarray3=str3.split("!",0);
+		System.out.println("\nwhen the limit is 0.");
+		System.out.println("Number  of tokens : "+stringarray3.length);
+		for(int i=0;i<stringarray3.length;i++)
+		{
+       System.out.println(stringarray3[i]);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+//check given string is pallindrome or not in java
+import java.util.Scanner;
+class  PallindromeString
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a String : ");
+		String str=sc.next();  //single word taken in this line
+		//logic to convert reverse
+		String nstr="";
+		char ch;
+		for(int i=str.length()-1;i>=0;i--)
+		{
+         ch=str.charAt(i);  //extract each character from String
+		 nstr=nstr+ch;     //ads each character in front of the existing string
+		}
+		System.out.println(nstr);
+		if(str.equals(nstr))
+		System.out.println("String is pallindrome ");
+		else
+			System.out.println("String is not pallindrome");
+	}
+}

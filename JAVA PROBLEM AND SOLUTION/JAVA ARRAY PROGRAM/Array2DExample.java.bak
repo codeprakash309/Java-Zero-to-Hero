@@ -1,0 +1,9 @@
+class  Array2DExample
+{
+	public static void main(String[] args) 
+	{
+		int arr[][]=new int[][]{{11,12,13,14},{10,20,30,40}};
+
+		System.out.println(arr[0][1]);
+	}
+}

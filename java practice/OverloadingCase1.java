@@ -1,0 +1,20 @@
+class  OverloadingCase1 
+{
+	public void M1(int i)
+	{
+      System.out.println("int agr method.....");
+	}
+	public void M1(float f)
+	{
+      System.out.println("float agr method.....");
+	}
+	public static void main(String[] args) 
+	{
+		OverloadingCase1 obj=new OverloadingCase1();
+		obj.M1(10);
+		obj.M1(5.5f);
+		obj.M1('a');
+		//obj.M1(10.8L);   //compile time error
+		//obj.M1(9.4);  // compile time error: no suitable method found for M1(double)
+	}
+}

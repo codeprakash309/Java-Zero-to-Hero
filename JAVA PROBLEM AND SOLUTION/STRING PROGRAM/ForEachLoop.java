@@ -1,0 +1,14 @@
+//example of for each loop  
+class  ForEachLoop
+{
+	public static void main(String[] args) 
+	{
+	String str[]={"c","c++","java","python","c#","Dot.Net"};
+	System.out.println("All programming languages are :  ");
+	for(String s:str)
+		{
+            System.out.print(s+ " ,");
+		}
+		System.out.println();
+	}
+}

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class DuplicateElementEndtoTheArray 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the number of elements you wants to enter  : ");
+		int n=sc.nextInt();
+		int[] arr=new int[n];
+		System.out.println("Enter the Elements : ");
+		for(int i=0;i<arr.length ;i++)
+		{
+           arr[i]=sc.nextInt();
+		}
+		//duplicate element placed end of the array
+		int k=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=1;j<=arr.length;j++)
+			{
+               if(arr[i]!=arr[j]&&arr[k]==arr[j])
+				{
+                 int temp=arr[i];
+				 arr[i]=arr[k];
+				 arr[k]=temp;
+				}
+				if(arr[k]!=arr[j])
+					k++;
+			}
+		}
+		System.out.print("*****************");
+		for(int i=0;i<arr.length;i++)
+		{
+           System.out.print(arr[i]+",");
+		}
+	}
+}

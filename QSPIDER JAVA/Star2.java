@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Star2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scn= new Scanner(System.in);
+		System.out.println("Enter number of row : ");
+		int row=scn.nextInt();
+		System.out.println("Enter number of column : ");
+		int col=scn.nextInt();
+		for(int i=0;i<row;i++){
+             for(int j=0;j<col;j++){
+				 if(i>=j)
+					 System.out.print("");
+				 else
+					 System.out.print("*");
+			 }
+			 System.out.println();
+		}
+	}
+}

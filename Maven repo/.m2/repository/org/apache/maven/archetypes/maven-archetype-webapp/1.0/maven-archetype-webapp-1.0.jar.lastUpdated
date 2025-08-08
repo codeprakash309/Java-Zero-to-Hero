@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Dec 11 20:08:27 IST 2022
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1670769507799
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven.archetypes\:maven-archetype-webapp\:jar\:1.0 from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org

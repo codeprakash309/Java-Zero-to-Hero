@@ -1,0 +1,19 @@
+class  OverloadingCase5
+{
+	public void M1(int i,float f)
+	{
+System.out.println("int-float  arg method....");
+	}
+	public void M1(float f, int i)
+	{
+System.out.println("float-int arg method.....");
+	}
+	public static void main(String[] args) 
+	{
+		OverloadingCase5 obj =new OverloadingCase5();
+		obj.M1(10,5.5f);
+		obj.M1(10.5f,9);
+		//obj.M1(10,20);  // compile time error: reference to M1 is ambiguous  obj.M1(10,20);
+		obj.M1(10.4f,20.6f); //compile time  error: reference to M1 is ambiguous  obj.M1(10,20);
+	}
+}

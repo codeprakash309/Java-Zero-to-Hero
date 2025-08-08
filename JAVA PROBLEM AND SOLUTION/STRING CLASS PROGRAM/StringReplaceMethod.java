@@ -1,0 +1,10 @@
+//the String class replace() method replaces all occurane of first sequence of character with second sequence of character.
+class StringReplaceMethod 
+{
+	public static void main(String[] args) 
+	{
+		String str="java is a programming language. java is a platform. java is an island.";
+		String replaceString=str.replace("java","kava"); //replaces all occurances of "java" to "kava"
+		System.out.println(replaceString);
+	}
+}

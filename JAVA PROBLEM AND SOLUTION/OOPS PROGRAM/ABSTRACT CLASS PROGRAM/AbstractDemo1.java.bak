@@ -1,0 +1,51 @@
+// abstract class's polymorphism and dynamic binding
+abstract class C1
+{
+	abstract void F1();
+	abstract void F2();
+}
+abstract class C2 extends C1
+{
+	public void F1()
+	{
+     System.out.println("F1 method inside C2 class");
+	}
+}
+class C3 extends C2
+{
+	public void F1()
+	{
+      System.out.println("F1 method overriden  inside C3 class");
+	}
+	public void F2()
+	{
+    System.out.println("F2 method inside C3 class");
+	}
+	public void F3()
+	{
+     System.out.println("F3 method inside C3 class");
+	}
+}
+class  AbstractDemo1
+{
+	public static void main(String[] args) 
+	{
+		C3 obj=new C3();
+		obj.F1();
+		obj.F2();
+		obj.F3();
+        System.out.println("**********************************************************");
+		//C2 obj1=new C2();  //C2 is abstract class so we can't create object directly
+		C2 obj1=new C3();
+		obj1.F1();
+		obj1.F2();
+		obj1.F3();
+		System.out.println("**********************************************************");
+		C1 obj2=new C3();
+		obj2.F1();
+		obj2.F2();
+		//obj2.F3()   we can't access 
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+//write a program to convert celcius to fahrenheit 
+import java.util.Scanner;
+class  CelciusToFahrenheit
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		float celcius;
+		System.out.print("Enter the temperature in Celcius : ");
+		celcius=sc.nextInt();
+		celcius=(celcius*1.8f)+32;
+		System.out.println("temperature in Fahrenheit : "+celcius+"F");
+	}
+}

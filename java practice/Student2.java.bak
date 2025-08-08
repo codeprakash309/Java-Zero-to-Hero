@@ -1,0 +1,27 @@
+//overriding the toString() method of object class into our class
+class Student2 
+{
+	String name;
+	int rollno;
+	Student2(String name,int rollno)
+	{
+        this.name=name;
+		this.rollno=rollno;
+	}
+	public String toString()
+	{
+    return name+"....."+rollno;
+	}
+	public static void main(String[] args) 
+	{
+		Student2 s1=new Student2("prakash",101);
+		Student2 s2=new Student2("guddu",102);
+		System.out.println(s1);  //internally called our toString() method not object class toString() 
+		System.out.println(s2);  //because we are override the toString() method in our class
+		System.out.println(s1.toString());
+		System.out.println(s2.toString());
+	}
+}
+
+//if there is no present  toString() method in our class then ,always called the toString() method of object class
+//it will alwayspritn the object reference

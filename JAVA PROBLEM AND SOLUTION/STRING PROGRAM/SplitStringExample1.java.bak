@@ -1,0 +1,16 @@
+class SplitStringExample1 
+{
+	public static void main(String[] args) 
+	{
+		//defining a string object
+		String s ="Life,is,your,creation";
+		//split string delimiter by comma
+		String[]  str=s.split("\n");   //we can use dot,whitespace,any character 
+		//iterate over string array
+		for(int i=0;i<str.length;i++)
+		{
+       //prints the tokens
+	   System.out.println(str[i]);
+		}
+	}
+}

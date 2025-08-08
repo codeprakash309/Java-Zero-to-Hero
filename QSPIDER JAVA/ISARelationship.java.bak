@@ -1,0 +1,30 @@
+class A
+{
+	int x=50;
+	int y=20;
+	int add;
+	public void M1()
+	{
+		add=x+y;
+    System.out.println("x+y is  : "+add);
+	}
+}
+class B extends A
+{
+	int sub=x-y;
+	public void M2()
+	{
+    System.out.println("x-y is : "+sub);
+	}
+}
+class ISARelationship 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("main method starts......");
+		B obj =new B();
+		obj.M1();
+		obj.M2();
+		System.out.println("main method ends......");
+	}
+}

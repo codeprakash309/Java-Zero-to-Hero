@@ -1,0 +1,20 @@
+import java.util.*;
+class DemoArrayLinked 
+{
+	public static void main(String[] args) 
+	{
+		List<String>al=new ArrayList<String>();
+		al.add("ajay");  //adding object in arraylist
+		al.add("kishan");
+		al.add("jatin");
+		al.add("devid");
+		List<String>ll=new LinkedList<String>();
+		ll.add("smit");
+		ll.add("durga");
+		ll.add("bibek");
+		ll.add("chiranjivi");
+		System.out.println("Array list : "+al);
+		System.out.println("_____________________________");
+		System.out.println("Array list : "+ll);
+	}
+}

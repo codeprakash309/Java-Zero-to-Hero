@@ -1,0 +1,15 @@
+class Method9 
+{
+	public void M1(object o, String s)
+	{
+
+System.out.println("object-string arg method");
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("main method starts");
+		Method9 obj = new Method9();
+		obj.M1(null,"abc");
+	}
+}

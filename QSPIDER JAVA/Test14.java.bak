@@ -1,0 +1,16 @@
+class Test14
+{
+	public void M1(Number n)
+	{
+      System.out.println("hello");
+	}
+	public void M1(Test13 t)
+	{
+  System.out.println("bye");
+	}
+	public static void main(String[] args) 
+	{
+		Test13 obj= new Test13();
+		obj.M1(new Number());
+	}
+}

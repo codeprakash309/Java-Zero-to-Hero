@@ -1,0 +1,27 @@
+class Animals 
+{
+}
+class monkey extends Animals
+{
+}
+class TestAnimal
+{
+	public void M1(Animals a);
+	{
+    System.out.println("Animal Version");
+	}
+  public void M1(monkey m)
+	{
+   System.out.println("monkey version");
+	}
+	public static void main(String[] args) 
+	{
+		TestAnimal t= new TestAnimal();
+		//Animals a=new Animals();
+		//t.M1(a);
+		monkey m=new monkey();
+		t.M1(m);
+		//Animal a1=new Animal();
+		//t.M1(a1);
+	}
+}

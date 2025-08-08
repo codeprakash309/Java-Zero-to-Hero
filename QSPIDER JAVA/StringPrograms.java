@@ -1,0 +1,17 @@
+class StringPrograms 
+{
+	public static void main(String[] args) 
+	{
+		String str="123";
+		System.out.println(reverse(str));
+	}
+	public static String reverse(String in){
+     if(in==null)
+		 throw new IllegalArgumentException("Null is not valid input");
+	 StringBuilder out=new StringBuilder();
+	 char[] c=in.toCharArray();
+	 for(int i=c.length-1;i>=0;i++)
+		 out.append(c[i]);
+	 return out.toString();
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.*;
+class TestGenerics 
+{
+	public static void main(String[] args) 
+	{
+		Map<Integer,String> m=new HashMap<Integer,String>();
+		m.put(1,"prakash");
+		m.put(2,"guddu");
+		m.put(3,"ankit");
+		m.put(4,"laxman");
+		//now use Map.Entry for set and iterator
+		Set<Map.Entry<Integer,String>>s=m.entrySet();
+		Iterator<Map.Entry<Integer,String>>itr=s.iterator();
+		while(itr.hasNext()){
+			Map.Entry e=itr.next();
+		System.out.println(e.getKey()+" = "+e.getValue());
+		}
+	}
+}

@@ -1,0 +1,14 @@
+class Method3 
+{
+	static int x=10;
+	public static void main(String[] args) 
+	{
+		System.out.println("main method starts");
+		Method3 obj=new Method3();
+		obj.M1();
+	}
+	public void M1()
+	{
+    System.out.println(x);
+	}
+}

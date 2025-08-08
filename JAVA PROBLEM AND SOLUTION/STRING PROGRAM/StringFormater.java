@@ -1,0 +1,21 @@
+//capitalize each word in a string
+class StringFormater 
+{
+	public static String capitalizeWord(String str)
+	{
+    String words[]=str.split("\\s");
+	String str2="";
+	for(String w:words)
+		{
+         String first=w.substring(0,1);
+		 String afterfirst=w.substring(1);
+		 str2+=first.toUpperCase()+afterfirst+" ";
+		}
+		return str2.trim();
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(capitalizeWord("my name is khan"));
+		System.out.println(capitalizeWord("sundra loves sundri"));
+	}
+}

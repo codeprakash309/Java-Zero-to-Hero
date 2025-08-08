@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class AtoZ 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("How many row you want to Enter in your partten : ");
+		int n=sc.nextInt();
+		int k=65;
+		for(int i=0;i<n;i++)
+			{
+			for(int j=0;j<n;j++)
+				{
+                    if(i>=j)
+					{
+                     System.out.print((char)(k++));
+					}
+					else
+					{
+                  System.out.print(" ");
+					}
+				}
+				System.out.println();
+
+	       	}
+	}
+}

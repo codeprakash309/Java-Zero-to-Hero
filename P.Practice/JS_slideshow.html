@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        var pics=new Array();
+        pics[0]="pownix prince.png"; 
+        pics[1]="pownix1.jpg";
+        pics[2]="prakash.jpg";
+        pics[3]="prakash22.jpg";
+        pics[4]="princep.jpg";
+
+        i=0;
+        function slideshow(){
+            document.f1.imgphoto.src=pics[i];
+            i=i+1;
+            if(i>3){
+                i=0;
+            }
+            setTimeout("slideshow()",2000);
+        }
+
+
+    </script>
+</head>
+<body onload="slideshow()">
+    <form name="f1">
+        <img src="pownix prince.png" name="imgphoto" width="500" height="650">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+abstract class P
+{
+	
+	P(int x)
+	{
+    System.out.println(x);
+	}
+}
+class  TestConstructor2 extends P
+{
+	TestConstructor2()
+	{
+		super();
+    System.out.println("child class constructor......");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main method....");
+		TestConstructor2 obj=new TestConstructor2();
+		System.out.println("main method end.....");
+	}
+} 

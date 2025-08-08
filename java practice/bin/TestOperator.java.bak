@@ -1,0 +1,12 @@
+class TestOperator 
+{
+	public static void main(String[] args) 
+	{
+		int x=10;
+		int y=10;
+		TestOperator t=new TestOperator();
+		TestOperator t1=new TestOperator();
+		System.out.println(x==y);
+		System.out.println(t==t1);
+	}
+}

@@ -1,0 +1,32 @@
+class P
+{
+	public void property()
+	{
+   System.out.println("gold +  dimond+land of parent's property.....");
+	}
+	public void marry()                    //overridden method
+	{
+       System.out.println("pooja");
+	}
+}
+class C extends P
+{
+	public void marry()                //overriding method
+	{
+    System.out.println("Selina");
+	}
+}
+
+
+class TestOverride 
+{
+	public static void main(String[] args) 
+	{
+		P p=new P();
+		p.marry();        //pooja
+		C c=new C();
+		c.marry();   //Selina
+		P p1=new C();
+		p1.marry();
+	}
+}

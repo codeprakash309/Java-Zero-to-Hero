@@ -1,0 +1,31 @@
+//Remove  Character from the string
+import java.util.Scanner;
+class RemoveCharacter 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter  the string : ");
+		String str1=sc.nextLine();
+        System.out.print("Enter  the  character to remove from a string : ");
+		char ch=sc.next().charAt(0);
+		char[] str2=str1.toCharArray();
+		 for(int i=0;i<str2.length;i++)
+		{
+			for(int j=i;j<str2.length;j++)
+			{
+			if(str2[i]==ch&&str2[i]!=' ')
+			{
+             str2[i]=str2[j];
+			}					
+          else
+				{
+                continue;
+				}
+			}
+			    System.out.println(str2[i]); 
+				
+		}        
+		
+ 	}
+}

@@ -1,0 +1,28 @@
+class A
+{
+	A()
+	{
+  System.out.println("class A  constructor.......");
+	}
+}
+class B extends A
+{   
+	B(int x)
+	{
+   System.out.println("class B constructor........");
+	}
+}
+class ConstructorChain extends B
+{
+	ConstructorChain ()
+	{
+		super(10);
+       System.out.println("ConstructorChain class constructor......");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main method start........");
+		ConstructorChain  obj=new ConstructorChain();
+		System.out.println("main method end........");
+	}
+}

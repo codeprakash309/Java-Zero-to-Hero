@@ -1,0 +1,10 @@
+import java.util.*;
+class RuntimeDemo 
+{
+	public static void main(String[] args) 
+	{
+
+		Runtime r=Runtime.getRuntime();
+		System.out.println("total free memory : "+r.totalMemory());
+	}
+}

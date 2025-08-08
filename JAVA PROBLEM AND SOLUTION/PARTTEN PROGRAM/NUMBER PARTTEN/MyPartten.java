@@ -1,0 +1,122 @@
+class MyPartten 
+{
+	public static void main(String[] args) 
+	{
+		int n=5;
+		for(int k=0;k<=3;k++) //outer loop 
+		{
+			try{
+				Thread.sleep(450);
+			
+
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if(i%2==0||(i==1)&&(j==0)||(i==3&&j==n-1))
+				{
+		         System.out.print("*");
+				}
+				else
+				{
+                  System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.print("\n\n");
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if(i%2==0||(j==0)&&(i==1)||(j==0&&i==3))
+				{
+		         System.out.print("*");
+				}
+				else
+				{
+                  System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+
+System.out.print("\n\n");
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if((j==0&&0<=i)||(i==4&&0<j ))
+				{
+		         System.out.print("*");
+				}
+				else
+				{
+                  System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.print("\n\n");
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if((i==n-1)||(i==0))
+				{
+		         System.out.print("*");
+				}
+				else if(j==n/2)
+				{
+                  System.out.print("*");
+				}
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+
+		System.out.print("\n\n");
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if((i==j)||(j==0&&0<i)||(j==4&&i<=3))
+				{
+		         System.out.print("*");
+				}
+				else
+				{
+                  System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+
+		System.out.print("\n\n");
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if((i==j)||(j==0&&0<=i)||(i==3&&j==1)||(i==3&&j==2))
+				{
+		         System.out.print("*");
+				}
+				else
+				{
+                  System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+
+
+
+System.out.println("****************************************************");
+}catch(Exception e)
+			{
+           e.printStackTrace();
+			}
+		}//outer loop close
+	}
+}

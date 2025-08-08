@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .heading{
+            font-size:18px;
+            text-align: center;
+            color: crimson;
+            background-color: antiquewhite;
+           
+
+
+
+        }
+        .container{
+            color: #000000;
+            background-color: aquamarine;
+            text-align: center;
+        }
+    </style>
+    <script language="javascript">
+        function showAmount(){
+            var price,quantity,amt;
+            price=parseFloat(document.f1.txtPrice.value);
+            quantity=parseInt(document.f1.txtorderQuantity.value);
+            amt=price*quantity;
+            document.f1.txtAmount.value=amt;
+
+        }
+        function order(){
+            window.open("order.html");
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <div class="heading">
+            <h1>product order</h1>
+        </div>
+        <div class="container">
+            Product Name : <input type="text" name="txtproductName" ><br>
+        Price  : <input type="text" name="txtPrice"><br>
+        Order Quantity : <input type="text" name="txtorderQuantity" onblur="showAmount()"><br>  <!--onblur work is if we presee the enter key then it will work -->
+        Amount : <input type="text" name="txtAmount" readonly><br>   <!--readonly mode user only read not any changes on it-->
+        <input type="submit" name="btnsub" value="Submit" onclick="order()">
+        <input type="reset" name="btnreset" value="Reset">
+
+        </div>
+        
+    </form>
+</body>
+</html>

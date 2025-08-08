@@ -1,0 +1,19 @@
+	import java.io.File;
+	import java.io.FileNotFoundException;
+	import java.util.Scanner;
+	class MyAscii 
+	{
+		public static void main(String[] args) throws FileNotFoundException,InterruptedException
+		{
+			File file=new File("C:\\Users\\powni\\OneDrive\\Desktop\\krishna.txt");
+			Scanner reader=new Scanner(file);
+			while(reader.hasNextLine())
+			{
+	       String line=reader.nextLine();
+		   System.out.println(line);
+		   Thread.sleep(85);
+			}
+			
+		}
+	}
+

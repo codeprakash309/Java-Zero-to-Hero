@@ -1,0 +1,16 @@
+abstract class Vechile    //abstract class
+{
+	abstract void speed();  //abstract method
+}
+class Bike extends speed
+{
+	public void speed()  //abstract class method implementation
+	{ 
+		System.out.println("Speed limit is 40 km/hr...");
+	}
+	public static void main(String[] args) 
+	{
+		Vechile v=new Bike();   //bike object is created and storing into the Vechile reference
+		v.speed();
+	}
+}

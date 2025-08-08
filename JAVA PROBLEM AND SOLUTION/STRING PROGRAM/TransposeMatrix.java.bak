@@ -1,0 +1,42 @@
+//how to get the transpose of matrix in java
+import java.util.Scanner;
+class  TransposeMatrix
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the number of Row : ");
+		int row=sc.nextInt();
+        System.out.print("Enter the number of Column : ");
+		int col=sc.nextInt();
+		int[][] matrix=new int[row][col];
+		System.out.println("Enter the Elements of matrix : ");
+		for(int  r=0;r<row;r++)
+		{
+			for(int c=0;c<col;c++)
+			{
+				System.out.print("\b"); 
+				matrix[r][c]=sc.nextInt();
+				System.out.print("\t"); //same line 
+			}
+			System.out.println(); //for new line 
+		}
+		int transpose[][]=new int[row][col];
+		for(int r=0;r<row;r++)
+		{
+			for(int c=0;c<col;c++)
+			{
+				transpose[c][r]=matrix[r][c];
+			}
+		}
+		System.out.println("Transpose matrix is : ");
+		for(int r=0;r<row;r++)
+		{
+			for(int c=0;c<col;c++)
+			{
+				System.out.print(transpose[r][c]+"\t");
+			}
+			System.out.println(); //for new line 
+		}
+	}
+}

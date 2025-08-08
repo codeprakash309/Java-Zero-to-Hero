@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class MissingNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the number of element you want :  ");
+		int n=sc.nextInt();  //length of the array
+		System.out.println("Enter the sorted array element   :  ");
+		int[] num=new int[n];
+		for(int i=0;i<n;i++)
+		{
+            num[i]=sc.nextInt();
+		}
+		System.out.print("Missing Number is  : "+MissingNumber(num)); 
+		System.out.println();
+	}
+	//logic for missing number
+	public static int MissingNumber(int[] arr)
+	{
+      int n=arr.length;
+	  int total=1;
+	  for(int i=2;i<=(n+1);i++)
+		{
+          total=total+i;
+		  total=total-arr[i-2];
+		}
+		return total;
+	}
+}

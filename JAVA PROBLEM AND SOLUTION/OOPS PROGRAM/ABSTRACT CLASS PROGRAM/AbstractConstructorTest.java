@@ -1,0 +1,24 @@
+abstract class Student
+{
+	String name;
+	int age;
+	void StudentDetails();
+	Student(String name,int age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+}
+class  AbstractConstructorTest extends Student
+{
+	public void StudentDetails()
+	{
+         System.out.println("Name of the student : "+name);
+		 System.out.println("Age of the student :"+age);
+	}
+		public static void main(String[] args) 
+	{
+		Student obj=new AbstractConstructorTest("prakash",23);
+		obj.StudentDetails();
+	}
+}

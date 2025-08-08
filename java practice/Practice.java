@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Practice 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the number of row : ");
+		int num=sc.nextInt();
+		System.out.println();
+		for(int i=0;i<num;i++)
+		{
+			for(int j=0;j<num;j++){
+				if(i<=j&&i>=j)
+               System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+		sc.close();
+	}
+}

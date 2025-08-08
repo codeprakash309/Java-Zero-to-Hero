@@ -1,0 +1,13 @@
+//the string class trim() method eliminates white spaces before and after the string
+class  StringTrimMethod
+{
+	public static void main(String[] args) 
+	{
+		String s="prakash chandra bagh";
+		String s1=" prince";
+		System.out.println(s);
+		System.out.println(s.trim());
+		System.out.println(s1);
+		System.out.println(s1.trim());
+	}
+}

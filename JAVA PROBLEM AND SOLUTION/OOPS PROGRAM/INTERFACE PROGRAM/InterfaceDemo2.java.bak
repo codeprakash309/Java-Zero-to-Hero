@@ -1,0 +1,27 @@
+//this program give you compile time error saying 
+interface Person
+{
+	String name="guddu";
+	int age=21;
+}
+class Student implements Person
+{
+	Student(String name,int age)
+	{
+      this.name=name;
+	  this.age=age;
+	}
+	public void M1()
+	{
+        System.out.println("Name  : "+this.name);
+		System.out.println("Age : "+this.age);
+	}
+}
+class InterfaceDemo2 
+{
+	public static void main(String[] args) 
+	{
+		Student s=new Student("Prakash",23);
+		s.M1();
+	}
+}

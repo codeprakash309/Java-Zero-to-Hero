@@ -1,0 +1,20 @@
+//in a row five best friends were sitting in the order : sanvi,siri,neha,nisha,roshan print the 
+//name of person sitting in nth position
+import java.util.Scanner;
+class  StringArray
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("how many name you want to enter :  ");
+		int n=sc.nextInt();
+		String str[]=new String[n];
+		System.out.println("Enter the 5 name of your best friends : ");
+		for(int i=0;i<n;i++)
+		{
+           str[i]=sc.next();
+		}
+		System.out.println("Name of the person sitting in the nth position :  " +str[str.length-1]);
+		
+	}
+}

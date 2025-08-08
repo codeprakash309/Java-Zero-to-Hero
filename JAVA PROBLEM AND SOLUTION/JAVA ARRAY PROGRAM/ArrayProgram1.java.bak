@@ -1,0 +1,16 @@
+//program to print the 3rd element of an array
+//and also print the ASCII value of 'A'
+class ArrayProgram1 
+{
+	public static void main(String[] args) 
+	{
+		int []a=new int[5];
+		a[0]=14;
+		a[1]=12;
+		a[2]=32;
+		a[3]=65;
+		a[4]=77;
+		System.out.println("3rd element of an array is : "+a[2]);
+		System.out.println("ASCII value of 'A' is  : "+(char)a[3]);
+	}
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class LargestDigitInNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a number  : ");
+		int num=sc.nextInt();
+		int largest=0;
+		int smallest=9;
+		while(num!=0)
+		{
+         int r=num%10;
+		 largest=Math.max(r,largest);
+		 smallest=Math.min(r,smallest);
+		 num=num/10;
+		}
+		System.out.println("smallest number is : "+smallest);
+		System.out.println("Largest number is :  "+largest);
+		
+	}
+}

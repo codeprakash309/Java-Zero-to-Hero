@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class PascalsTriangle 
+{
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter a number :  ");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			int num=1;
+              System.out.print("%"+(n-i)*2+"s"+"");
+			  for(int j=0;j<=i;j++)
+			{
+                System.out.printf("%4d",num);
+				num=num*(i-j)/(j+1);
+			}
+			System.out.println();
+		}
+	}
+}

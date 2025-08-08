@@ -1,0 +1,34 @@
+//Find duplicate in an array
+import java.util.Scanner;
+class  DuplicateArray
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the size of an array : ");
+		int n=sc.nextInt();
+		System.out.println("Enter the array elements : ");
+		int arr[]=new int[n];
+		int count=0;
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+         //logic for duplicate elements in array
+       for(int i=0;i<arr.length;i++)
+		{
+		   for(int j=0;j<arr.length;j++)
+			{
+			   if(arr[i]==arr[j])
+				{
+                 count++;
+				}
+			 }
+		}
+		if(count>=1)
+			System.out.println("all the elements occurring more than onece "+count);
+		else
+			System.out.println("-1");
+		
+	}
+}

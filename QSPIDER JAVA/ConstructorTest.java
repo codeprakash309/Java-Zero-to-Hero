@@ -1,0 +1,17 @@
+class ConstructorTest
+{
+  ConstructorTest()
+	{
+int x=10;
+int y=20;
+int z=x+y;
+System.out.println("Sum of two number is : "+z);
+
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts");
+		ConstructorTest obj = new ConstructorTest();
+		System.out.println("main end");
+	}
+}

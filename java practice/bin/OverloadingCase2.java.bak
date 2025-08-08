@@ -1,0 +1,19 @@
+class OverloadingCase2
+{
+	public void M1(Object o)
+	{
+   System.out.println("Object arg method.....");
+	}
+	public void M1(String s)
+	{
+   System.out.println("String arg method.....");
+	}
+	public static void main(String[] args) 
+	{
+		OverloadingCase2 obj =new OverloadingCase2();
+		obj.M1("abc");
+		obj.M1(new Object());
+		obj.M1(new String());
+		obj.M1(null);
+	}
+}

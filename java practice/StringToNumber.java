@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class StringToNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter this String "+" 8955795758"+" :    ");
+		String s=sc.next();
+		long l=Long.parseLong(s);
+		if(l%7==0)
+			System.out.println("divisible by 7 ");
+		else
+			System.out.println("not divisible by 7");
+
+			sc.close();
+	}
+}

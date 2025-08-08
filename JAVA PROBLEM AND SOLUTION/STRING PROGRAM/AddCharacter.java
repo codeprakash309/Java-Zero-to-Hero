@@ -1,0 +1,35 @@
+//Adding  a Character at specified index in a string
+import java.util.Scanner;
+class AddCharacter 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter  the string : ");
+		String str1=sc.nextLine();
+        System.out.print("Enter  the  character to adding into  a string : ");
+		char ch=sc.next().charAt(0);
+		System.out.print("Enter the position you want to add : ");
+		int n=sc.nextInt();
+		char[] str2=str1.toCharArray();
+		int count=0;
+		 for(int i=0;i<str2.length;i++)
+		{
+			 count=1;
+			for(int j=i;j<str2.length;j++)
+			{
+			if(str2[i]==str2[n])
+			{
+				 count++;
+				  str2[j]=ch;
+             }
+			}
+			   if(count<=1)
+			{
+               System.out.println(str2[i]);
+			}
+				
+		}        
+		
+ 	}
+}
